@@ -1,12 +1,12 @@
 # Neural_Network_Text_Filtering
-The filter compares known text strings (keywords) with input text (e.g. ocr results) and only stores the input text in a database if the two strings are "similar enough" (how similar is determined by algorithm hyperparameters).
+The filter receives input text (e.g. ocr) and compares it with up to 300 keywords (known text strings). The filter will only let the input text pass if it successfully finds a keyword that is "similar enough" to it.
 
-Five different datasets, defined below, were used to determine the input text to the filtering algorithm.
-genAllMatch = Dataset1 => Exact matches (Strings are the same)
-genSpellMatch = Dataset2 => Only one letter in the keyword string is changed
-genNoMatch = Dataset => No matches (different strings)
-noMatchShort = Dataset => No matches and short strings
-realData = Dataset5 => Comparing actual screen capture ocr results with neural network keywords
+Five different datasets were used to determine the input text to the filter:
+1. genAllMatch = The input text is the exact same as one of the keywords.
+genSpellMatch = Only one character in the keyword string is changed.
+genNoMatch = Dataset => The input text is completely different from the keywords.
+noMatchShort = Dataset => The input text is both shorter and completely different from the keywords.
+realData = Dataset5 => The input text represents actual screen capture ocr results.
 
-The attached database contains the filtering results (execution time and accuracy-related results) of all 13 string comparison algorithms described in the paper entitled "Dropping irrelevant neural network classifier input: A fast method for comparing string lists". 
+The attached database contains the filtering results (execution time and accuracy-related results) of 14 different string comparison algorithms described in the paper entitled "Dropping irrelevant neural network classifier input: A fast method for comparing string lists". 
 [LINK]
