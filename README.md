@@ -8,5 +8,5 @@ genNoMatch = Dataset => The input text is completely different from the keywords
 noMatchShort = Dataset => The input text is both shorter and completely different from the keywords.
 realData = Dataset5 => The input text represents actual screen capture ocr results.
 
-The attached database contains the filtering results (execution time and accuracy-related results) of 14 different string comparison algorithms described in the paper entitled "Dropping irrelevant neural network classifier input: A fast method for comparing string lists". 
+The attached database contains the filtering results (execution time and accuracy-related results) of 14 different string comparison algorithms described in the paper entitled "Filtering noisy text to accelerate classification". 
 [LINK]
