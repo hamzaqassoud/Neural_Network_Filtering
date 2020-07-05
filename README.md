@@ -1,5 +1,5 @@
 # Neural_Network_Text_Filtering
-The filter receives input text (e.g. ocr) and compares it with up to 300 keywords (known text strings). The filter will only let the input text pass if it successfully finds a keyword that is "similar enough" to it.
+The filter receives input text (e.g. ocr) and compares it with up to 300 keywords (known text strings that the neural network is trained on). The filter will only let the input text pass if it successfully finds a keyword that is "similar enough" to it.
 
 Five different datasets were used to determine the input text to the filter:
 1. genAllMatch = Dataset1 => The input text is the exact same as one of the keywords. <br />
